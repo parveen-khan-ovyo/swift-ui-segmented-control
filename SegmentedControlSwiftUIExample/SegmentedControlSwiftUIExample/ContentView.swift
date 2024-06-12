@@ -6,13 +6,12 @@
 //
 
 import SwiftUI
-//Uncomment when use
-//import swift-ui-segmented-control
+import swift_ui_segmented_control
 
 struct ContentView: View {
     
     var body: some View {
-        let interface = HMSegmentedControl()
+        let interface = HMSegementedControl()
         interface.setItems(["HOME", "EURO 2024", "SPORTS", "MOVIES", "TV SHOWS", "KIDS", "LIVE"])
         interface.setItemSelectedTitleColor(Color.yellow)
         interface.itemSelectedBarColor(Color.yellow)
@@ -23,7 +22,7 @@ struct ContentView: View {
         interface.setItemsImages(images)
         interface.setItemTintColor(.white)
         interface.setItemSelectedTintColor(.yellow)
-        interface.setFontName("Gotham-Bold")
+       // interface.setFontName("Gotham-Bold")
         interface.setFontSize(12)
         interface.addTarget(Coordinator())
         
