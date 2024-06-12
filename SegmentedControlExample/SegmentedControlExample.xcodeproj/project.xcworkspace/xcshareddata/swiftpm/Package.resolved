@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swift-ui-segmented-control",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/OvyoTech/swift-ui-segmented-control",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "a76112bf7a020dd026bbad507aa3e3cfa7f82d44"
+      }
+    }
+  ],
+  "version" : 2
+}

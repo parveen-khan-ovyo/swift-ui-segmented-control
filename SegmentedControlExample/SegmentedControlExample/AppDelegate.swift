@@ -14,6 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FontLoader.loadFont(bundle: .main, fontName: "Gotham-Bold", fontExtension: "otf")
+        
         return true
     }
 

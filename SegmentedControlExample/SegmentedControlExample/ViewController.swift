@@ -6,41 +6,49 @@
 //
 
 import UIKit
-import swift-ui-segmented-control
-import SwiftUI
+import swift_ui_segmented_control
 
 class ViewController: UIViewController, SegmentedControlDelegate {
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // Do any additional setup after loading the view.
+        self.view.backgroundColor = .gray
         let viewInterface = HMSegementedControl()
         viewInterface.setItems(["HOME", "EURO 2024", "SPORTS", "MOVIES", "TV SHOWS", "KIDS", "LIVE"])
         viewInterface.setItemSelectedTitleColor(.yellow)
         viewInterface.itemSelectedBarColor(.yellow)
-        let image: UIImage = UIImage.init(systemName: "star.fill")!
-        image.withTintColor(.blue, renderingMode: .alwaysTemplate)
-        viewInterface.setItemsImages([image, image, image, image, image])
+        viewInterface.setItemTitleColor(.white)
+        // let image: UIImage = UIImage.init(systemName: "star.fill")!
+        let image: UIImage = UIImage(named: "star")!
+        // image.withTintColor(.red, renderingMode: .alwaysTemplate)
+        viewInterface.setItemTintColor(.white)
+        viewInterface.setItemSelectedTintColor(.yellow)
+        // uncomment it to show item with images
+        //viewInterface.setItemsImages([UIImage(named: "home")!, UIImage(named: "contacts")!, UIImage(named: "moneyTransfer")!, UIImage(named: "pcOnDesk")!, UIImage(named: "camper")!, UIImage(named: "userAccount")!, UIImage(named: "star")!])
+        //viewInterface.setItemBar(true)
         viewInterface.setFontName("Gotham-Bold")
         viewInterface.setFontSize(12)
-        viewInterface.setItemTitleColor(.white)
-        //viewInterface.setBackgroundColor("#000000")
         viewInterface.addTarget(self)
-       // viewInterface.setItemBackgroundColor(.red)
-       // viewInterface.setItemSelectedBackgroundColor(.green)
-       // viewInterface.setCornerRadius(20)
+        
+        //to set other properties
+        // viewInterface.setItemBackgroundColor(.red)
+        // viewInterface.setItemSelectedBackgroundColor(.green)
+        // viewInterface.setCornerRadius(20)
         
         let view1: UIView = viewInterface.create()
         view.addSubview(view1)
-        view1.backgroundColor = .clear
-        view1.frame = CGRect(x: 0, y: 50, width: view.bounds.width, height: 40)
+        view1.backgroundColor = .black
+        view1.frame = CGRect(x: 0, y: 64, width: view.bounds.width, height: 50)
+        
     }
-
+    
     func tabDidClickAt(_ index: Int) {
         
         switch index {
         case 0:
-            self.view.backgroundColor = .red
+            self.view.backgroundColor = .black
         case 1:
             self.view.backgroundColor = .gray
         case 2:
@@ -53,5 +61,18 @@ class ViewController: UIViewController, SegmentedControlDelegate {
             self.view.backgroundColor = .white
         }
     }
+}
 
+public struct FontLoader {
+    public static func loadFont(bundle: Bundle, fontName: String, fontExtension: String) {
+        guard let fontURL = bundle.url(forResource: fontName, withExtension: fontExtension),
+              let fontData = try? Data(contentsOf: fontURL),
+              let provider = CGDataProvider(data: fontData as CFData),
+              let font = CGFont(provider) else {
+            return
+        }
+        
+        var error: Unmanaged<CFError>?
+        CTFontManagerRegisterGraphicsFont(font, &error)
+    }
 }
