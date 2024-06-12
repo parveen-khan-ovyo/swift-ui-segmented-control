@@ -1,0 +1,83 @@
+# macOS
+.DS_Store
+
+# Build artifacts
+/build
+/DerivedData
+
+# Swift Package Manager
+/.build
+/Packages
+.swiftpm/configuration/registries.json
+.swiftpm/xcode/package.xcworkspacedata
+.swiftpm/xcode/xcshareddata/swiftpm/Package.resolved
+
+# Xcode
+xcuserdata/
+*.xcworkspace
+*.xcuserdata
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata
+!*.xcodeproj/xcshareddata/*
+!*.xcworkspace/contents.xcworkspacedata
+!*.xcworkspace/xcshareddata
+!*.xcworkspace/xcshareddata/*
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*.DS_Store
+*.orcl
+
+# Device Data
+device/
+
+# App Code
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Archives
+*.xcarchive
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# IDE Preferences
+xcuserdata/
+
+# App packaging
+*.ipa
+*.dSYM.zip
+.dSYM/
+
+# Swift Package Manager
+.swiftpm/
+.build/
+
+# Accio dependency manager
+Dependencies/
+.accio/
+
+# Generated files
+*.docset
+
+# SwiftLint
+.swiftlint.yml
+.swiftformat
+
+# Netrc
+.netrc
