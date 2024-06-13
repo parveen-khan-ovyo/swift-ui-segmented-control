@@ -27,29 +27,48 @@ Included is a demo project showing how to customize OvyoSegmentedControl.
 let viewInterface = OvyoSegmentedControlInterface()
 
 viewInterface.setItems(["HOME", "EURO 2024", "SPORTS", "MOVIES", "TV SHOWS", "KIDS", "LIVE"])
+
 viewInterface.setItemSelectedTitleColor(Color.yellow)
+
 viewInterface.itemSelectedBarColor(Color.yellow)
+
 viewInterface.setItemTitleColor(.white)
+
 // let image: UIImage = UIImage.init(systemName: "star.fill")!
+
 let image: UIImage = UIImage(named: "star")!
+
 viewInterface.setItemTintColor(.white)
+
 viewInterface.setItemSelectedTintColor(.yellow)
         
 // Set images, assuming you have the UIImage assets in your project and set image render as template
+
 // viewInterface.setItemsImages([UIImage(named: "home")!, UIImage(named: "contacts")!, UIImage(named: "moneyTransfer")!, UIImage(named: "pcOnDesk")!,
 UIImage(named: "camper")!, UIImage(named: "userAccount")!, UIImage(named: "star")!])
+
 //To hide show bottom bar
+
 //  viewInterface.setItemBar(true)
       
 //viewInterface.setFontName("Gotham-Bold")
+
 viewInterface.setFontSize(12)
+
 viewInterface.addTarget(self)
+
 let view1: UIView = viewInterface.create()
+
 view.addSubview(view1)
+
 view1.backgroundColor = .black
+
 view1.frame = CGRect(x: 0, y: 64, width: view.bounds.width, height: 50)
+
 viewInterface.setItemBackgroundColor(.red)
+
 viewInterface.setItemSelectedBackgroundColor(.green)
+
 viewInterface.setCornerRadius(20)
         
 
@@ -57,8 +76,8 @@ viewInterface.setCornerRadius(20)
 
 struct ContentView: View {
     var body: some View {
-        let interface = OvyoSegmentedControlInterface()
-        interface.setItems(["HOME", "EURO 2024", "SPORTS", "MOVIES", "TV SHOWS", "KIDS", "LIVE"])
+        let interface = OvyoSegmentedControlInterface()\n
+        interface.setItems(["HOME", "EURO 2024", "SPORTS", "MOVIES", "TV SHOWS", "KIDS", "LIVE"])\n
         interface.setItemSelectedTitleColor(Color.yellow)
         interface.itemSelectedBarColor(Color.yellow)
         interface.setItemTitleColor(.white)
@@ -77,6 +96,7 @@ struct ContentView: View {
             Spacer()
         }
     }
+    
 }
 
 class Coordinator: SegmentedControlDelegate {
@@ -92,6 +112,6 @@ class Coordinator: SegmentedControlDelegate {
 ![SegmentedControlImage](https://github.com/parveen-khan-ovyo/OvyoSegmentedControl/assets/135009495/11596192-3bc7-4934-950e-2a74588c7ab4)
 
 # Maintainers
-Parveen - parveen.khan@ovyo.com, 
+Parveen - parveen.khan@ovyo.com,
 Vishal - vishal@ovyo.com, 
 Srikant - srikanth.suryawanshi@ovyo.com
