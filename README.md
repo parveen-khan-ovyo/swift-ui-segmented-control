@@ -25,31 +25,31 @@ Included is a demo project showing how to customize OvyoSegmentedControl.
 # Segmented Control in UIView
 
 let viewInterface = OvyoSegmentedControlInterface()
-        viewInterface.setItems(["HOME", "EURO 2024", "SPORTS", "MOVIES", "TV SHOWS", "KIDS", "LIVE"])
-        viewInterface.setItemSelectedTitleColor(Color.yellow)
-        viewInterface.itemSelectedBarColor(Color.yellow)
-        viewInterface.setItemTitleColor(.white)
-       // let image: UIImage = UIImage.init(systemName: "star.fill")!
-        let image: UIImage = UIImage(named: "star")!
-        viewInterface.setItemTintColor(.white)
-        viewInterface.setItemSelectedTintColor(.yellow)
+viewInterface.setItems(["HOME", "EURO 2024", "SPORTS", "MOVIES", "TV SHOWS", "KIDS", "LIVE"])
+viewInterface.setItemSelectedTitleColor(Color.yellow)
+viewInterface.itemSelectedBarColor(Color.yellow)
+viewInterface.setItemTitleColor(.white)
+// let image: UIImage = UIImage.init(systemName: "star.fill")!
+let image: UIImage = UIImage(named: "star")!
+viewInterface.setItemTintColor(.white)
+viewInterface.setItemSelectedTintColor(.yellow)
         
-       // Set images, assuming you have the UIImage assets in your project and set image render as template
-       // viewInterface.setItemsImages([UIImage(named: "home")!, UIImage(named: "contacts")!, UIImage(named: "moneyTransfer")!, UIImage(named: "pcOnDesk")!,
-       UIImage(named: "camper")!, UIImage(named: "userAccount")!, UIImage(named: "star")!])
-     //To hide show bottom bar
-      //  viewInterface.setItemBar(true)
+// Set images, assuming you have the UIImage assets in your project and set image render as template
+// viewInterface.setItemsImages([UIImage(named: "home")!, UIImage(named: "contacts")!, UIImage(named: "moneyTransfer")!, UIImage(named: "pcOnDesk")!,
+UIImage(named: "camper")!, UIImage(named: "userAccount")!, UIImage(named: "star")!])
+//To hide show bottom bar
+//  viewInterface.setItemBar(true)
       
-   //     viewInterface.setFontName("Gotham-Bold")
-        viewInterface.setFontSize(12)
-        viewInterface.addTarget(self)
-        let view1: UIView = viewInterface.create()
-        view.addSubview(view1)
-        view1.backgroundColor = .black
-        view1.frame = CGRect(x: 0, y: 64, width: view.bounds.width, height: 50)
-        viewInterface.setItemBackgroundColor(.red)
-        viewInterface.setItemSelectedBackgroundColor(.green)
-        viewInterface.setCornerRadius(20)
+//viewInterface.setFontName("Gotham-Bold")
+viewInterface.setFontSize(12)
+viewInterface.addTarget(self)
+let view1: UIView = viewInterface.create()
+view.addSubview(view1)
+view1.backgroundColor = .black
+view1.frame = CGRect(x: 0, y: 64, width: view.bounds.width, height: 50)
+viewInterface.setItemBackgroundColor(.red)
+viewInterface.setItemSelectedBackgroundColor(.green)
+viewInterface.setCornerRadius(20)
         
 
 # Segmented Control in SwiftUI View
