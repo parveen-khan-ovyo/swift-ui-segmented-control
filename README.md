@@ -25,6 +25,7 @@ Included is a demo project showing how to customize OvyoSegmentedControl.
 # Segmented Control in UIView
 
 let viewInterface = OvyoSegmentedControlInterface()
+
 viewInterface.setItems(["HOME", "EURO 2024", "SPORTS", "MOVIES", "TV SHOWS", "KIDS", "LIVE"])
 viewInterface.setItemSelectedTitleColor(Color.yellow)
 viewInterface.itemSelectedBarColor(Color.yellow)
