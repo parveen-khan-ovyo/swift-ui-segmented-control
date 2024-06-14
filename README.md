@@ -1,94 +1,48 @@
 # SwiftUISegmentedControl
-Segemented Control developed in SwiftUI, this can be used to replaced older HMSegmentedControl
+swift-ui-segmented-control developed in SwiftUI, this can be used to replaced older HMSegmentedControl
 
-![sgmentedControlText](https://github.com/parveen-khan-ovyo/OvyoSegmentedControl/assets/135009495/ff8bb9e6-9c36-4b04-a754-f25a7fb0ef15)
+<p align="center">
+ <img src = https://github.com/OvyoTech/swift-ui-segmented-control/assets/135009495/a9dd86a9-4530-4cb4-839b-5d180d44733a>
+</p>
 
-Features
-📸 Supports both text and images
-↕️ Multiple sizing and selection styles
-📜 Horizontal scrolling for an infinite number of segments
-⚙️ Advanced title styling with text attributes for font, color, etc
-🖥 Compatible with both Swift and Objective-C
-🖥 Compatible with both SwiftUI View and Swift view
-📱 Updated for Xcode 15.4, iOS 13 and Swift 5.9. Supports all the way back to iOS 13!
+#Features   
+📸 Supports both text and images   
+↕️ Multiple sizing and selection styles   
+📜 Horizontal scrolling for an infinite number of segments   
+⚙️ Advanced title styling with text attributes for font, color, etc   
+🖥 Compatible with both Swift and Objective-C   
+🖥 Compatible with both SwiftUI View and Swift view  
+📱 Updated for Xcode 15.4, iOS 13 and Swift 5.9. Supports all the way back to iOS 13!   
 
 # Installation
 1. Select File > Swift Packages > Add Package Dependency....
-2. Add the Github URL of the Package file:
+2. Add the Github URL of the Package file: https://github.com/OvyoTech/swift-ui-segmented-control
+3. Choose the appropriate version rule.
+4. Select Add Package.
 
 # Usage
 
 The code below will create a segmented control with the default looks:
 
-Included is a demo project showing how to customize OvyoSegmentedControl.
+ **Segmented Control in UIView**
 
-# Segmented Control in UIView
-
-let viewInterface = OvyoSegmentedControlInterface()
-
+```
+let viewInterface = HMSegementedControl()
 viewInterface.setItems(["HOME", "EURO 2024", "SPORTS", "MOVIES", "TV SHOWS", "KIDS", "LIVE"])
-
 viewInterface.setItemSelectedTitleColor(Color.yellow)
-
 viewInterface.itemSelectedBarColor(Color.yellow)
-
-viewInterface.setItemTitleColor(.white)
-
-// let image: UIImage = UIImage.init(systemName: "star.fill")!
-
-let image: UIImage = UIImage(named: "star")!
-
-viewInterface.setItemTintColor(.white)
-
-viewInterface.setItemSelectedTintColor(.yellow)
         
-// Set images, assuming you have the UIImage assets in your project and set image render as template
-
-// viewInterface.setItemsImages([UIImage(named: "home")!, UIImage(named: "contacts")!, UIImage(named: "moneyTransfer")!, UIImage(named: "pcOnDesk")!,
-UIImage(named: "camper")!, UIImage(named: "userAccount")!, UIImage(named: "star")!])
-
-//To hide show bottom bar
-
-//  viewInterface.setItemBar(true)
-      
-//viewInterface.setFontName("Gotham-Bold")
-
-viewInterface.setFontSize(12)
-
-viewInterface.addTarget(self)
-
 let view1: UIView = viewInterface.create()
-
 view.addSubview(view1)
-
-view1.backgroundColor = .black
-
 view1.frame = CGRect(x: 0, y: 64, width: view.bounds.width, height: 50)
+```
+   
+**Segmented Control in SwiftUI View**
 
-viewInterface.setItemBackgroundColor(.red)
-
-viewInterface.setItemSelectedBackgroundColor(.green)
-
-viewInterface.setCornerRadius(20)
-        
-
-# Segmented Control in SwiftUI View
-
- ( struct ContentView: View {   
+```
     var body: some View {   
-        let interface = OvyoSegmentedControlInterface()   
+        let interface = HMSegementedControl()   
         interface.setItems(["HOME", "EURO 2024", "SPORTS", "MOVIES", "TV SHOWS", "KIDS", "LIVE"])   
-        interface.setItemSelectedTitleColor(Color.yellow)   
-        interface.itemSelectedBarColor(Color.yellow)   
-        interface.setItemTitleColor(.white)   
-        // Set images, assuming you have the UIImage assets in your project and set image render as template   
-        let images: [UIImage] = [UIImage(named: "home")!, UIImage(named: "contacts")!, UIImage(named: "moneyTransfer")!, UIImage(named: "pcOnDesk")!, UIImage(named: "camper")!, UIImage(named: "userAccount")!, UIImage(named: "star")!]   
-        interface.setItemsImages(images)   
-        interface.setItemTintColor(.white)   
-        interface.setItemSelectedTintColor(.yellow)   
-        interface.setFontName("Gotham-Bold")   
-        interface.setFontSize(12)   
-        interface.addTarget(Coordinator())   
         return VStack { interface.create()   
                 .background(Color.black)    
                 .frame(width: UIScreen.main.bounds.width, height: 50)    
@@ -96,20 +50,26 @@ viewInterface.setCornerRadius(20)
             Spacer()   
         }   
     }   
-    
- }  
+```  
 
-class Coordinator: SegmentedControlDelegate {   
-    func tabDidClickAt(_ index: Int) {   
-        print("index is", index)   
-    }   
-}   
+Included is a demo projects showing how to customize swift-ui-segmented-control with UIView and SwiftUI view.
 
 # Possible Styles
+<p align="center">
+<img src = https://github.com/OvyoTech/swift-ui-segmented-control/assets/135009495/d78bec5f-d4bb-44be-9334-2ec072bad77e>
+</p>
 
-![sgmentedControlText](https://github.com/parveen-khan-ovyo/OvyoSegmentedControl/assets/135009495/ff8bb9e6-9c36-4b04-a754-f25a7fb0ef15)
-![SegmentedControlImageWithText](https://github.com/parveen-khan-ovyo/OvyoSegmentedControl/assets/135009495/5c5b3e84-39ff-4b64-80e0-5ca7c8f95743)
-![SegmentedControlImage](https://github.com/parveen-khan-ovyo/OvyoSegmentedControl/assets/135009495/11596192-3bc7-4934-950e-2a74588c7ab4)
+<p align="center">        
+<img src = https://github.com/OvyoTech/swift-ui-segmented-control/assets/135009495/745a3fc1-892f-4b7d-a9dc-23b79ed20664>
+</p>
+
+<p align="center">        
+<img src = https://github.com/OvyoTech/swift-ui-segmented-control/assets/135009495/971076b1-9bf0-4ea1-ad77-f689c8cf39fa>
+</p>
+
+#License   
+
+swift-ui-segmented-control is licensed under the terms of the GNU GENERAL PUBLIC LICENSE. Please see the [LICENSE](https://github.com/OvyoTech/swift-ui-segmented-control/blob/develop/LICENSE) file for full details.
 
 # Maintainers
 Parveen - parveen.khan@ovyo.com,   
