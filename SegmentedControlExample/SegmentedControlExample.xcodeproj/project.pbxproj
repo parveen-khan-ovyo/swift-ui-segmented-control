@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9645FC82C3C1D9200ED6A3D /* SwiftUISegmentedControl in Frameworks */ = {isa = PBXBuildFile; productRef = A9645FC72C3C1D9200ED6A3D /* SwiftUISegmentedControl */; };
 		A9A3482E2C19931C00F03B8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A3482D2C19931C00F03B8E /* AppDelegate.swift */; };
 		A9A348302C19931C00F03B8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A3482F2C19931C00F03B8E /* SceneDelegate.swift */; };
 		A9A348322C19931C00F03B8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A348312C19931C00F03B8E /* ViewController.swift */; };
@@ -16,7 +17,6 @@
 		A9A348452C19931E00F03B8E /* SegmentedControlExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A348442C19931E00F03B8E /* SegmentedControlExampleTests.swift */; };
 		A9A3484F2C19931E00F03B8E /* SegmentedControlExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A3484E2C19931E00F03B8E /* SegmentedControlExampleUITests.swift */; };
 		A9A348512C19931E00F03B8E /* SegmentedControlExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A348502C19931E00F03B8E /* SegmentedControlExampleUITestsLaunchTests.swift */; };
-		A9EBE8F82C19C95700D515AB /* swift-ui-segmented-control in Frameworks */ = {isa = PBXBuildFile; productRef = A9EBE8F72C19C95700D515AB /* swift-ui-segmented-control */; };
 		A9EBE8FB2C19C9D600D515AB /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = A9EBE8F92C19C9D600D515AB /* Gotham-Book.otf */; };
 		A9EBE8FC2C19C9D600D515AB /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A9EBE8FA2C19C9D600D515AB /* Gotham-Bold.otf */; };
 /* End PBXBuildFile section */
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9EBE8F82C19C95700D515AB /* swift-ui-segmented-control in Frameworks */,
+				A9645FC82C3C1D9200ED6A3D /* SwiftUISegmentedControl in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +152,7 @@
 			);
 			name = SegmentedControlExample;
 			packageProductDependencies = (
-				A9EBE8F72C19C95700D515AB /* swift-ui-segmented-control */,
+				A9645FC72C3C1D9200ED6A3D /* SwiftUISegmentedControl */,
 			);
 			productName = SegmentedControlExample;
 			productReference = A9A3482A2C19931C00F03B8E /* SegmentedControlExample.app */;
@@ -227,7 +227,7 @@
 			);
 			mainGroup = A9A348212C19931C00F03B8E;
 			packageReferences = (
-				A9EBE8F62C19C95700D515AB /* XCRemoteSwiftPackageReference "swift-ui-segmented-control" */,
+				A9645FC62C3C1D9200ED6A3D /* XCRemoteSwiftPackageReference "swift-ui-segmented-control" */,
 			);
 			productRefGroup = A9A3482B2C19931C00F03B8E /* Products */;
 			projectDirPath = "";
@@ -625,21 +625,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A9EBE8F62C19C95700D515AB /* XCRemoteSwiftPackageReference "swift-ui-segmented-control" */ = {
+		A9645FC62C3C1D9200ED6A3D /* XCRemoteSwiftPackageReference "swift-ui-segmented-control" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/OvyoTech/swift-ui-segmented-control";
 			requirement = {
-				branch = develop;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A9EBE8F72C19C95700D515AB /* swift-ui-segmented-control */ = {
+		A9645FC72C3C1D9200ED6A3D /* SwiftUISegmentedControl */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A9EBE8F62C19C95700D515AB /* XCRemoteSwiftPackageReference "swift-ui-segmented-control" */;
-			productName = "swift-ui-segmented-control";
+			package = A9645FC62C3C1D9200ED6A3D /* XCRemoteSwiftPackageReference "swift-ui-segmented-control" */;
+			productName = SwiftUISegmentedControl;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

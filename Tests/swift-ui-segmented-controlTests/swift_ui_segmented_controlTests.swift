@@ -1,5 +1,5 @@
 import XCTest
-@testable import swift_ui_segmented_control
+@testable import SwiftUISegmentedControl
 
 final class swift_ui_segmented_controlTests: XCTestCase {
     func testExample() throws {

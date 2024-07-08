@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import swift_ui_segmented_control
+import SwiftUISegmentedControl
 
 struct ContentView: View {
     

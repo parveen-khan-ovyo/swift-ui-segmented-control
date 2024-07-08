@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/OvyoTech/swift-ui-segmented-control",
       "state" : {
-        "branch" : "develop",
-        "revision" : "a76112bf7a020dd026bbad507aa3e3cfa7f82d44"
+        "revision" : "daaa0dc6cd342ab2b2afcaf5786fbcb11d057a97",
+        "version" : "1.1.0"
       }
     }
   ],

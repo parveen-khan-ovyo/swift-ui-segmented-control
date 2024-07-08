@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import swift_ui_segmented_control
+import SwiftUISegmentedControl
 
 class ViewController: UIViewController, SegmentedControlDelegate {
     
