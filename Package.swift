@@ -13,16 +13,16 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "swift-ui-segmented-control",
-            targets: ["swift-ui-segmented-control"]),
+            name: "SwiftUISegmentedControl",
+            targets: ["SwiftUISegmentedControl"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "swift-ui-segmented-control"),
+            name: "SwiftUISegmentedControl"),
         .testTarget(
-            name: "swift-ui-segmented-controlTests",
-            dependencies: ["swift-ui-segmented-control"]),
+            name: "SwiftUISegmentedControlTests",
+            dependencies: ["SwiftUISegmentedControl"]),
     ]
 )
